@@ -29,9 +29,9 @@ function ToDoList() {
 			/>
 			<button onClick={(event) => handleAddTodoItem(event)}>Add item</button>
 			<ul>
-				{todos.map((todo) =>
-					todos.map((todo) => <li key={todo.id}>{todo.text}</li>)
-				)}
+				{todos.map((todo) => (
+					<li key={todo.id}>{todo.text}</li>
+				))}
 			</ul>
 		</div>
 	);
